@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+<title>Random Number Generator</title>
+<style>
+
+  body {
+    margin-top: 15%;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #display {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+</style>
+<script>
+  function numGenerator() {
+    var randomNumber = Math.floor(Math.random() * 100);
+    
+    document.getElementById("display").innerText = "Random Number: " + randomNumber;
+  }
+</script>
+</head>
+<body>
+<h1>Random Number Generator</h1>
+
+<button onclick="numGenerator()">Generate Random Number</button>
+
+<p id="display"></p>
+</body>
+</html>
+
+<!--intro duction to Document Object Model DOM-->
